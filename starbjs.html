@@ -26,73 +26,45 @@
       fall launch of the Pumpkin Spice Latte) are seasonal or specific to the
       locality of the store.
     </p>
+
+    <!-- Function to convert an array to list elements and display the list in HTML -->
+    <script>
+      function makeList(elementID, itemArray) {
+        for (let i = 0; i < itemArray.length; i++) {
+          let item = document.createElement("li");
+          item.innerText = itemArray[i];
+          console.log(itemArray[i]);
+          document.getElementById(elementID).appendChild(item);
+        }
+      }
+    </script>
+
     <h3>Our main menu categories are:</h3>
-
-    <!--use JavaScript array to list the menu in this category (i.e., replace unordered list)
-
-    <ul>
-      <li>Coffee</li>
-      <li>Food</li>
-      <li>At Home Coffee</li>
-    </ul>
-  -->
-
-    <p id="menuCategories"></p>
+    <ul id="menuCategories"></ul>
 
     <script>
       var menuCategories = ["Coffee", "Food", "At Home Coffee"];
-      let categoryList = "";
-
-      for (let i = 0; i < menuCategories.length; i++) {
-        categoryList += menuCategories[i] + "<br>";
-      }
-
-      document.getElementById("menuCategories").innerHTML = categoryList;
+      makeList("menuCategories", menuCategories);
     </script>
 
     <h3>Our customers’ top three favorites Hot Coffees are:</h3>
-    <!--use JavaScript array to list the menu in this category (i.e., replace unordered list)
-
-    <ul>
-      <li>Caffe Americano</li>
-      <li class="outofstock">Cappuccino</li>
-      <li class="soon outofstock">Expresso</li>
-    </ul>
-  -->
-
-    <p id="favCoffees"></p>
+    <ul id="favCoffees"></ul>
 
     <script>
-      var favCoffees = ["Caffe Americano","Cappuccino","Expresso"];
-      let coffeeList = "";
-
-      for (var i = 0; i < favCoffees.length; i++) {
-        coffeeList += favCoffees[i] + "<br>";
-      }
-
-      document.getElementById("favCoffees").innerHTML = coffeeList;
+      var favCoffees = ["Caffe Americano", "Cappuccino", "Expresso"];
+      makeList("favCoffees", favCoffees);
     </script>
 
     <h3>Why not give our delicious food menu a try also?</h3>
-    <!--use JavaScript array to list the menu in this category (i.e., replace unordered list)
-    <ul>
-      <li>Ham and Swiss Panini</li>
-      <li>Cripsy Grilled Cheese Sandwhich</li>
-      <li>Chicken Caprese Panini</li>
-    </ul>
-    -->
-
-    <p id=favFoods></p>
+    <ul id="favFoods"></ul>
 
     <script>
-      var favFoods = ["Ham and Swiss Panini","Cripsy Grilled Cheese Sandwhich","Chicken Caprese Panini"];
-      let foodList = "";
-
-      for (var i = 0; i < favFoods.length; i++) {
-        foodList += favFoods[i] + "<br>";
-      }
-
-      document.getElementById("favFoods").innerHTML = foodList;
+      var favFoods = [
+        "Ham and Swiss Panini",
+        "Cripsy Grilled Cheese Sandwhich",
+        "Chicken Caprese Panini",
+      ];
+      makeList("favFoods", favFoods);
     </script>
 
     <h4 id="priceheader">Food Price List</h4>
