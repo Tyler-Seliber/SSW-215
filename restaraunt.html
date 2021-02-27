@@ -10,9 +10,149 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title></title>
+    <title>Pop 70, Stevens Campus</title>
     <link rel="stylesheet" href="styles/style.css" />
   </head>
 
-  <body></body>
+  <body>
+    <h1>Pop 70, Stevens Campus</h1>
+    <img src="images/Profile Photo.png" />
+
+    <h3>Breakfast Menu</h3>
+    <table id="breakfast-menu">
+      <tr>
+        <th>Name</th>
+        <th>Price</th>
+      </tr>
+    </table>
+    <button>Dollar to Pound</button>
+
+    <!-- the following code came from https://www.valentinog.com/blog/html-table/ -->
+    <!-- <script>
+      let menuItems = [
+        {
+          Name: "Monte Falco",
+          Price: 1658,
+        },
+        {
+          Name: "Monte Falterona",
+          Price: 1654,
+        },
+        {
+          Name: "Poggio Scali",
+          Price: 1520,
+        },
+        {
+          Name: "Pratomagno",
+          Price: 1592,
+        },
+        {
+          Name: "Monte Amiata",
+          Price: 1738,
+        },
+      ];
+
+      function generateTableHead(table, data) {
+        let thead = table.createTHead();
+        let row = thead.insertRow();
+        for (let key of data) {
+          let th = document.createElement("th");
+          let text = document.createTextNode(key);
+          th.appendChild(text);
+          row.appendChild(th);
+        }
+      }
+
+      function generateTable(table, data) {
+        for (let element of data) {
+          let row = table.insertRow();
+          for (key in element) {
+            let cell = row.insertCell();
+            let text = document.createTextNode(element[key]);
+            cell.appendChild(text);
+          }
+        }
+      }
+
+      let table = document.querySelector("table");
+      let data = Object.keys(menuItems[0]);
+      generateTable(table, menuItems); // generate the table first
+      generateTableHead(table, data); // then the head
+    </script>
+
+    <script>
+      function convertPrice() {
+        console.log(menuItems[0].Price);
+        menuItems[0].Price = 10;
+        generateTable(table, menuItems);
+        console.log(menuItems[0].Price);
+      }
+    </script>
+
+    <button onclick="convertPrice()">Click Me</button> -->
+
+    <h3>Lunch Menu</h3>
+    <table id="lunch-menu">
+      <tr>
+        <th>Name</th>
+        <th>Price</th>
+      </tr>
+    </table>
+    <button>Dollar to Pound</button>
+
+    <h3>Dinner Menu</h3>
+    <table id="dinner-menu">
+      <tr>
+        <th>Name</th>
+        <th>Price</th>
+      </tr>
+    </table>
+    <button>Dollar to Pound</button>
+
+    <script>
+      function menuItem(itemCategory, itemName, itemPrice) {
+        this.category = itemCategory;
+        this.name = itemName;
+        this.usd = "$" + itemPrice.toFixed(2); // Use toFixed() to truncate prices to 2 decimal places - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed
+        this.pound = "E " + (itemPrice * 0.71).toFixed(2);
+        this.displayPrice = this.usd;
+      }
+
+      var breakfastMenu = document.getElementById("breakfast-menu");
+      var lunchMenu = document.getElementById("lunch-menu");
+      var dinnerMenu = document.getElementById("dinner-menu");
+
+      var breakfastItems = [
+        new menuItem("Breakfast", "Eggs", 10.2),
+        new menuItem("Breakfast", "Omeletee", 7.35),
+        new menuItem("Breakfast", "Waffles", 23.41),
+      ];
+      var lunchItems = [
+        new menuItem("Lunch", "Eggs", 10.2),
+        new menuItem("Lunch", "Omeletee", 7.35),
+        new menuItem("Lunch", "Waffles", 23.41),
+      ];
+      var dinnerItems = [
+        new menuItem("Dinner", "Eggs", 10.2),
+        new menuItem("Dinner", "Omeletee", 7.35),
+        new menuItem("Dinner", "Waffles", 23.41),
+      ];
+
+      generateTable(breakfastMenu, breakfastItems);
+      generateTable(lunchMenu, lunchItems);
+      generateTable(dinnerMenu, dinnerItems);
+
+      function generateTable(tableID, itemArray) {
+        for (i in itemArray) {
+          let row = tableID.insertRow();
+          let nameCell = row.insertCell();
+          let priceCell = row.insertCell();
+          nameCell.appendChild(document.createTextNode(itemArray[i].name));
+          priceCell.appendChild(
+            document.createTextNode(itemArray[i].displayPrice)
+          );
+        }
+      }
+    </script>
+  </body>
 </html>
