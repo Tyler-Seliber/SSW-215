@@ -25,7 +25,7 @@
         <th>Price</th>
       </tr>
     </table>
-    <button>Dollar to Pound</button>
+    <button onclick="convertPrice(0)">Dollar to Pound</button>
 
     <!-- the following code came from https://www.valentinog.com/blog/html-table/ -->
     <!-- <script>
@@ -98,7 +98,7 @@
         <th>Price</th>
       </tr>
     </table>
-    <button>Dollar to Pound</button>
+    <button onclick="convertPrice(1)">Dollar to Pound</button>
 
     <h3>Dinner Menu</h3>
     <table id="dinner-menu">
@@ -107,7 +107,7 @@
         <th>Price</th>
       </tr>
     </table>
-    <button>Dollar to Pound</button>
+    <button onclick="convertPrice(2)">Dollar to Pound</button>
 
     <script>
       function menuItem(itemCategory, itemName, itemPrice) {
@@ -138,6 +138,8 @@
         new menuItem("Dinner", "Waffles", 23.41),
       ];
 
+      var categoriesArray = [breakfastItems, lunchItems, dinnerItems];
+
       generateTable(breakfastMenu, breakfastItems);
       generateTable(lunchMenu, lunchItems);
       generateTable(dinnerMenu, dinnerItems);
@@ -152,6 +154,23 @@
             document.createTextNode(itemArray[i].displayPrice)
           );
         }
+      }
+
+      // David Treder (a CS major) helped guide me toward this algorithm
+      function convertPrice(categoryIndex) {
+        let categoryItems = categoriesArray[categoryIndex];
+        let category = categoryItems[0].category;
+        let categoryID = category.toLowerCase() + "-menu";
+        var categoryTable = document.getElementById(categoryID);
+
+        for (i in categoryItems) {
+          categoryTable.deleteRow(1);
+        }
+
+        for (i in categoryItems) {
+          categoryItems[i].displayPrice = categoryItems[i].pound;
+        }
+        generateTable(categoryTable, categoryItems);
       }
     </script>
   </body>
