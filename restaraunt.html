@@ -17,8 +17,9 @@
   <body>
     <h1>Pop 70, Stevens Campus</h1>
     <img src="images/Profile Photo.png" />
+    <h4>Bio ~ 5 sentences</h4>
 
-    <h3>Breakfast Menu</h3>
+    <h3 id="breakfast-header">Breakfast Menu</h3>
     <table id="breakfast-menu">
       <tr>
         <th>Name</th>
@@ -91,7 +92,7 @@
 
     <button onclick="convertPrice()">Click Me</button> -->
 
-    <h3>Lunch Menu</h3>
+    <h3 id="lunch-header">Lunch Menu</h3>
     <table id="lunch-menu">
       <tr>
         <th>Name</th>
@@ -100,7 +101,7 @@
     </table>
     <button onclick="convertPrice(1)">Dollar to Pound</button>
 
-    <h3>Dinner Menu</h3>
+    <h3 id="dinner-header">Dinner Menu</h3>
     <table id="dinner-menu">
       <tr>
         <th>Name</th>
@@ -109,12 +110,15 @@
     </table>
     <button onclick="convertPrice(2)">Dollar to Pound</button>
 
+    <h2 id="confirmation-text"></h2>
+    <button id="order-button" onclick="placeOrder()">Place Order</button>
+
     <script>
       function menuItem(itemCategory, itemName, itemPrice) {
         this.category = itemCategory;
         this.name = itemName;
         this.usd = "$" + itemPrice.toFixed(2); // Use toFixed() to truncate prices to 2 decimal places - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed
-        this.pound = "E " + (itemPrice * 0.71).toFixed(2);
+        this.pound = "£" + (itemPrice * 0.71).toFixed(2);
         this.displayPrice = this.usd;
       }
 
@@ -163,14 +167,31 @@
         let categoryID = category.toLowerCase() + "-menu";
         var categoryTable = document.getElementById(categoryID);
 
+        // Remove all rows from the table (otherwise the converted prices would be added as additional rows)
         for (i in categoryItems) {
           categoryTable.deleteRow(1);
         }
 
         for (i in categoryItems) {
-          categoryItems[i].displayPrice = categoryItems[i].pound;
+          // Check if website currenlt displays price in USD or Pounds, then switches displayPrice to display the other currency.
+          if (categoryItems[i].displayPrice === categoryItems[i].usd) {
+            categoryItems[i].displayPrice = categoryItems[i].pound;
+          } else {
+            categoryItems[i].displayPrice = categoryItems[i].usd;
+          }
         }
         generateTable(categoryTable, categoryItems);
+      }
+
+      function placeOrder() {
+        let confirmationText =
+          "We've received your order. Your order will be ready for pick up in 5 minutes.";
+        document.getElementById(
+          "confirmation-text"
+        ).innerHTML = confirmationText;
+
+        // Remove place order putton
+        document.getElementById("order-button").remove();
       }
     </script>
   </body>

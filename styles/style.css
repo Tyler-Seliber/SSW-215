@@ -1,5 +1,10 @@
-h1 {
+body {
+    background-color:khaki;
+}
+
+h1, h2, h4, p {
     text-align: center;
+    color: orangered;
 }
 
 img {
@@ -12,4 +17,16 @@ img {
 table {
     border: 1px solid black;
     /* border-collapse: collapse; */
+}
+
+#breakfast-header {
+    color: #109cc6;
+}
+
+#lunch-header {
+    color: RGB(64, 199, 66);
+}
+
+#dinner-header {
+    color: HSL(300, 85%, 42%);
 }
