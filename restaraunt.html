@@ -28,70 +28,6 @@
     </table>
     <button onclick="convertPrice(0)">Dollar to Pound</button>
 
-    <!-- the following code came from https://www.valentinog.com/blog/html-table/ -->
-    <!-- <script>
-      let menuItems = [
-        {
-          Name: "Monte Falco",
-          Price: 1658,
-        },
-        {
-          Name: "Monte Falterona",
-          Price: 1654,
-        },
-        {
-          Name: "Poggio Scali",
-          Price: 1520,
-        },
-        {
-          Name: "Pratomagno",
-          Price: 1592,
-        },
-        {
-          Name: "Monte Amiata",
-          Price: 1738,
-        },
-      ];
-
-      function generateTableHead(table, data) {
-        let thead = table.createTHead();
-        let row = thead.insertRow();
-        for (let key of data) {
-          let th = document.createElement("th");
-          let text = document.createTextNode(key);
-          th.appendChild(text);
-          row.appendChild(th);
-        }
-      }
-
-      function generateTable(table, data) {
-        for (let element of data) {
-          let row = table.insertRow();
-          for (key in element) {
-            let cell = row.insertCell();
-            let text = document.createTextNode(element[key]);
-            cell.appendChild(text);
-          }
-        }
-      }
-
-      let table = document.querySelector("table");
-      let data = Object.keys(menuItems[0]);
-      generateTable(table, menuItems); // generate the table first
-      generateTableHead(table, data); // then the head
-    </script>
-
-    <script>
-      function convertPrice() {
-        console.log(menuItems[0].Price);
-        menuItems[0].Price = 10;
-        generateTable(table, menuItems);
-        console.log(menuItems[0].Price);
-      }
-    </script>
-
-    <button onclick="convertPrice()">Click Me</button> -->
-
     <h3 id="lunch-header">Lunch Menu</h3>
     <table id="lunch-menu">
       <tr>
@@ -127,22 +63,26 @@
       var dinnerMenu = document.getElementById("dinner-menu");
 
       var breakfastItems = [
-        new menuItem("Breakfast", "Eggs", 10.2),
-        new menuItem("Breakfast", "Omeletee", 7.35),
-        new menuItem("Breakfast", "Waffles", 23.41),
-        new menuItem("Breakfast", "Cereal", 4.20),
+        new menuItem("Breakfast", "Pop Tarts", 2.5),
+        new menuItem("Breakfast", "Pop 'n Top Pancakes ", 8.75),
+        new menuItem("Breakfast", "Popped Eggs Benedict", 12.6),
+        new menuItem(
+          "Breakfast",
+          "Snap'em, Crack'em, & Pop'em Eggs + Hashbrowns",
+          6.0
+        ),
       ];
       var lunchItems = [
-        new menuItem("Lunch", "Eggs", 10.2),
-        new menuItem("Lunch", "Omeletee", 7.35),
-        new menuItem("Lunch", "Waffles", 23.41),
-        new menuItem("Lunch", "Cereal", 4.20),
+        new menuItem("Lunch", "Popcorn Chicken", 3.75),
+        new menuItem("Lunch", "Pop Up Sandwich", 5.5),
+        new menuItem("Lunch", "Jiffy Pop", 2.5),
+        new menuItem("Lunch", "Loli a la Pop", 0.75),
       ];
       var dinnerItems = [
-        new menuItem("Dinner", "Eggs", 10.2),
-        new menuItem("Dinner", "Omeletee", 7.35),
-        new menuItem("Dinner", "Waffles", 23.41),
-        new menuItem("Lunch", "Cereal", 4.20),
+        new menuItem("Dinner", "Grill-Popped Steak", 10.45),
+        new menuItem("Dinner", "Mixed Greens Salad with Popcorn Chicken", 7.35),
+        new menuItem("Dinner", "Soda Pop", 2.00),
+        new menuItem("Dinner", "Cake Pop", 3.00),
       ];
 
       var categoriesArray = [breakfastItems, lunchItems, dinnerItems];
@@ -151,6 +91,7 @@
       generateTable(lunchMenu, lunchItems);
       generateTable(dinnerMenu, dinnerItems);
 
+      //The following code was inspired by https://www.valentinog.com/blog/html-table/
       function generateTable(tableID, itemArray) {
         for (i in itemArray) {
           let row = tableID.insertRow();
