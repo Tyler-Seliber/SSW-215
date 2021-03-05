@@ -1,0 +1,36 @@
+-- Part (a)
+
+CREATE TABLE students (
+	StudID int,
+	FirstName varchar(255),
+	LastName varchar(255),
+	Major varchar(255),
+	Year int UNIQUE
+);
+
+-- Part (b)
+
+INSERT INTO students (StudID, FirstName, LastName, Major, Year)
+	VALUES
+		(40325815, "Kristin", "Mullins", "Physics", 2085),
+		(55598018, "Harriet", "Brooks", "Journalism", 2043),
+		(51880524, "Wanda", "McBride", "Architecture", 2005),
+		(33133078, "Johnny", "Fowler", "Education", 2036),
+		(31475822, "Rachel", "Rowe", "Medicine", 2088);
+
+-- Part (c)
+
+SELECT EmployeeID, FirstName, LastName, Title FROM Employee WHERE Title = "Sales Support Agent";
+
+-- Part (d)
+
+ALTER TABLE Employee ADD COLUMN Salary int;
+
+UPDATE Employee SET Salary = 400000 WHERE ReportsTo is null;
+UPDATE Employee SET salary = 350000 WHERE ReportsTo = 1;
+UPDATE Employee SET salary = 150000 WHERE ReportsTo = 2;
+UPDATE Employee SET salary = 200000 WHERE ReportsTo = 6;
+
+-- Part (e)
+
+SELECT AlbumID, Title FROM Album WHERE ArtistId = 2 OR ArtistId = 27 OR ArtistId = 82;
