@@ -1,4 +1,11 @@
-# SSW-215
-Hosts all assignments and projects for SSW-215.
+# Homework Assignment 6
+## Due Date: Monday, March 15, 2021 at 11:59 pm 
+## Total Points: 15 pts
+The purpose of this assignment to give you the opportunity to practice and apply the knowledge gained from today’s class to solve real problems. This ultimately will allow you to learn how to write a program using user-defined function in python
+## Please follow the instructions below to complete your assignment task:
 
-Each assignment will be saved in it's own branch.
+### Make sure you already have both python 3.5 + and/ or any IDE of your choice installed on your computer. If not, please refer to today’s lecture slide and follow the instructions in url link on slide to download and install the software.
+1. Write a user-defined function called prod_len_name that returns the product of the length of your firstname and lastname as result. The function prod_len_name should accept only two values as its argument i.e., your firstname and lastname and compute the product of the length of the first argument (your firstname) and second argument (your lastname) and return the result. The result should be displayed along with the following text: “The product of the value of the lengths of my firstname and lastname is”, + result. Save your program with the name prod_yourlastname.py
+2. Write a user-defined function called max_name_len that returns the largest of the length of your firstname and lastname. The function max_name should accept only two values as its argument i.e., your firstname and lastname and compute the maximum of the length of the first argument (your firstname) and second argument (your lastname) and return the result (note that if the lengths are equal, the value of one the length is returned as the largest). The result should be displayed along with the following text: “The largest value of the length of my firstname and lastname is”, + result. Save your program with the name max_yourlastname.py
+3.  Take screenshots of the results displayed for each of your program in (a) and (b) above. Submit the screenshots along with your program files i.e., prod_yourlastname.py and max_yourlastname.py in a zipped folder
+ 
