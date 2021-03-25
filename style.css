@@ -1,0 +1,17 @@
+/* This code was developed in response to the SSW215-A midterm exam */
+
+h1 {
+  color: blue;
+}
+
+h2 {
+  color: #9c1c36;
+}
+
+h3 {
+  color: rgb(201, 209, 46);
+}
+
+h4 {
+  color: hsl(147, 6%, 34%);
+}
