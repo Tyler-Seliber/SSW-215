@@ -2,8 +2,9 @@
 ## Due Date: Monday, April 5, 2021 at 11:59 pm
 ## Total Points: 10 pts
 
-The purpose of this assignment to give you the opportunity to practice and apply the knowledge gained from today’s class to solve real problems. This ultimately will allow you to learn how to write a python program to read and manipulate the content of text file
-Please follow the instructions below to complete your assignment task:
+The purpose of this assignment to give you the opportunity to practice and apply the knowledge gained from today’s class to solve real problems. This ultimately will allow you to learn how to write a python program to read and manipulate the content of text file.
+
+## Please follow the instructions below to complete your assignment task:
 
 ### Make sure you already have both python 3.5 + and/ or any IDE of your choice installed on your computer. If not, please refer to today’s lecture slide and follow the instructions in url link on slide to download and install the software.
 
