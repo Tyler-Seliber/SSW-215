@@ -22,6 +22,12 @@ class BankAccount:
         self.balance -= amount
         print(self.name + ' withdrew $%d' % amount)
 
+# Moderated bank accounts that inherit from BankAccount
+class ModeratedAccount(BankAccount):
+    def __init__(self, acc_number, balance, name, primary_account):
+        super().__init__(acc_number, balance, name)
+        self.primary_account = primary_account
+
 # Get current date and time
 # Code adapted from https://www.programiz.com/python-programming/datetime/current-datetime
 def currentTime():
@@ -38,12 +44,13 @@ def printAccountStates(account_list):
 
 # Initialize bank accounts
 scrooge = BankAccount(100001, 1000000, 'Scrooge McDuck')
-huey = BankAccount(700007, 150, 'Huey Duck')
+huey = ModeratedAccount(700007, 150, 'Huey Duck', scrooge)
 dewy = BankAccount(800008, 350, 'Dewey Duck')
 louie = BankAccount(900009, 25, 'Louie Duck')
 
 # Store accounts in a list to easily print all states
 account_list = [scrooge, huey, dewy, louie]
+
 
 printAccountStates(account_list)
 
