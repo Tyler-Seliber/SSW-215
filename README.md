@@ -9,14 +9,14 @@ Each of the Bank accounts contains:
     2. their balance
 
     3. their name
+   
+    4. The maximum amount they can withdraw each time which is equal to 10% of their account:
 
-The maximum amount they can withdraw each time which is equal to 10% of their account:
+    5. what is the total amount of withdrawals
 
-    1. what is the total amount of withdrawals
+    6. what is the total amount of deposits
 
-    2. what is the total amount of deposits
-
-    3. what is the total amount of penalties
+    7. what is the total amount of penalties
 
 **Each time one of the nephews withdraws from their account, the other two nephews get the same amount deposited in their account by Scrooge McDuck from Scrooge McDuck's account.**
 
@@ -36,7 +36,7 @@ The maximum amount they can withdraw each time which is equal to 10% of their ac
     Huey withdraws $20
     Louie withdraws $10
     Dewey withdraws $20
-    Huey with draws $30
+    Huey withdraws $30
     Louie withdraws $40
 
 **After each withdrawal and deposit please provide a state of all the accounts.**
