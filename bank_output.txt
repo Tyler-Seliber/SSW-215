@@ -1,0 +1,163 @@
+Welcome! Accessing your account information...
+
+
+Account States as of 15/04/2021 22:01:29
+        Account ID      Account Holder          Account Balance         Total Withdrawn         Total Deposited         Total Penalities
+        ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+        100001          Scrooge McDuck          $1000000                        $0                      $0                      $0
+        700007          Huey Duck               $150                    $0                      $0                      $0
+        800008          Dewey Duck              $350                    $0                      $0                      $0
+        900009          Louie Duck              $25                     $0                      $0                      $0
+
+
+Louie Duck withdrew $2.
+Huey Duck deposited $2.
+Dewey Duck deposited $2.
+
+Account States as of 15/04/2021 22:01:29
+        Account ID      Account Holder          Account Balance         Total Withdrawn         Total Deposited         Total Penalities
+        ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+        100001          Scrooge McDuck          $999996                 $4                      $0                      $0
+        700007          Huey Duck               $152                    $0                      $2                      $0
+        800008          Dewey Duck              $352                    $0                      $2                      $0
+        900009          Louie Duck              $23                     $2                      $0                      $0
+
+
+Dewey Duck withdrew $20.
+Huey Duck deposited $20.
+Louie Duck deposited $20.
+
+Account States as of 15/04/2021 22:01:29
+        Account ID      Account Holder          Account Balance         Total Withdrawn         Total Deposited         Total Penalities
+        ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+        100001          Scrooge McDuck          $999956                 $44                     $0                      $0
+        700007          Huey Duck               $172                    $0                      $22                     $0
+        800008          Dewey Duck              $332                    $20                     $2                      $0
+        900009          Louie Duck              $43                     $2                      $20                     $0
+
+
+*** Huey Duck attempted to withdraw $20, which is more than the maximum allowed amount. $5 will be deducted from their withdrawal request and a $5 penalty fee will be applied to Scrooge McDuck. ***
+
+Huey Duck withdrew $15.
+A penalty fee of $5 was incurred on Scrooge McDuck's account.
+
+Account States as of 15/04/2021 22:01:29
+        Account ID      Account Holder          Account Balance         Total Withdrawn         Total Deposited         Total Penalities
+        ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+        100001          Scrooge McDuck          $999951                 $49                     $0                      $5
+        700007          Huey Duck               $157                    $15                     $22                     $5
+        800008          Dewey Duck              $332                    $20                     $2                      $0
+        900009          Louie Duck              $43                     $2                      $20                     $0
+
+
+*** Louie Duck attempted to withdraw $10, which is more than the maximum allowed amount. $5 will be deducted from their withdrawal request and a $5 penalty fee will be applied to Scrooge McDuck. ***
+
+Louie Duck withdrew $5.
+A penalty fee of $5 was incurred on Scrooge McDuck's account.
+
+Account States as of 15/04/2021 22:01:29
+Welcome! Accessing your account information...
+
+
+Account States as of 15/04/2021 22:11:31
+        Account ID      Account Holder          Account Balance         Total Withdrawn         Total Deposited         Total Penalities
+        ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+        100001          Scrooge McDuck          $1000000                        $0                      $0                      $0
+        700007          Huey Duck               $150                    $0                      $0                      $0
+        800008          Dewey Duck              $350                    $0                      $0                      $0
+        900009          Louie Duck              $25                     $0                      $0                      $0
+
+
+Louie Duck withdrew $2.
+Huey Duck deposited $2.
+Dewey Duck deposited $2.
+
+Account States as of 15/04/2021 22:11:31
+        Account ID      Account Holder          Account Balance         Total Withdrawn         Total Deposited         Total Penalities
+        ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+        100001          Scrooge McDuck          $999996                 $4                      $0                      $0
+        700007          Huey Duck               $152                    $0                      $2                      $0
+        800008          Dewey Duck              $352                    $0                      $2                      $0
+        900009          Louie Duck              $23                     $2                      $0                      $0
+
+
+Dewey Duck withdrew $20.
+Huey Duck deposited $20.
+Louie Duck deposited $20.
+
+Account States as of 15/04/2021 22:11:31
+        Account ID      Account Holder          Account Balance         Total Withdrawn         Total Deposited         Total Penalities
+        ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+        100001          Scrooge McDuck          $999956                 $44                     $0                      $0
+        700007          Huey Duck               $172                    $0                      $22                     $0
+        800008          Dewey Duck              $332                    $20                     $2                      $0
+        900009          Louie Duck              $43                     $2                      $20                     $0
+
+
+*** Huey Duck attempted to withdraw $20, which is more than the maximum allowed amount. $5 will be deducted from their withdrawal request and a $5 penalty fee will be applied to Scrooge McDuck. ***
+
+Huey Duck withdrew $15.
+A penalty fee of $5 was incurred on Scrooge McDuck's account.
+
+Account States as of 15/04/2021 22:11:31
+        Account ID      Account Holder          Account Balance         Total Withdrawn         Total Deposited         Total Penalities
+        ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+        100001          Scrooge McDuck          $999951                 $49                     $0                      $5
+        700007          Huey Duck               $157                    $15                     $22                     $5
+        800008          Dewey Duck              $332                    $20                     $2                      $0
+        900009          Louie Duck              $43                     $2                      $20                     $0
+
+
+*** Louie Duck attempted to withdraw $10, which is more than the maximum allowed amount. $5 will be deducted from their withdrawal request and a $5 penalty fee will be applied to Scrooge McDuck. ***
+
+Louie Duck withdrew $5.
+A penalty fee of $5 was incurred on Scrooge McDuck's account.
+
+Account States as of 15/04/2021 22:11:31
+        Account ID      Account Holder          Account Balance         Total Withdrawn         Total Deposited         Total Penalities
+        ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+        100001          Scrooge McDuck          $999946                 $54                     $0                      $10
+        700007          Huey Duck               $157                    $15                     $22                     $5
+        800008          Dewey Duck              $332                    $20                     $2                      $0
+        900009          Louie Duck              $38                     $7                      $20                     $5
+
+
+Dewey Duck withdrew $20.
+Huey Duck deposited $20.
+Louie Duck deposited $20.
+
+Account States as of 15/04/2021 22:11:31
+        Account ID      Account Holder          Account Balance         Total Withdrawn         Total Deposited         Total Penalities
+        ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+        100001          Scrooge McDuck          $999906                 $94                     $0                      $10
+        700007          Huey Duck               $177                    $15                     $42                     $5
+        800008          Dewey Duck              $312                    $40                     $2                      $0
+        900009          Louie Duck              $58                     $7                      $40                     $5
+
+
+*** Huey Duck attempted to withdraw $30, which is more than the maximum allowed amount. $5 will be deducted from their withdrawal request and a $5 penalty fee will be applied to Scrooge McDuck. ***
+
+Huey Duck withdrew $25.
+A penalty fee of $5 was incurred on Scrooge McDuck's account.
+
+Account States as of 15/04/2021 22:11:31
+        Account ID      Account Holder          Account Balance         Total Withdrawn         Total Deposited         Total Penalities
+        ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+        100001          Scrooge McDuck          $999901                 $99                     $0                      $15
+        700007          Huey Duck               $152                    $40                     $42                     $10
+        800008          Dewey Duck              $312                    $40                     $2                      $0
+        900009          Louie Duck              $58                     $7                      $40                     $5
+
+
+*** Louie Duck attempted to withdraw $40, which is more than the maximum allowed amount. $5 will be deducted from their withdrawal request and a $5 penalty fee will be applied to Scrooge McDuck. ***
+
+Louie Duck withdrew $35.
+A penalty fee of $5 was incurred on Scrooge McDuck's account.
+
+Account States as of 15/04/2021 22:11:31
+        Account ID      Account Holder          Account Balance         Total Withdrawn         Total Deposited         Total Penalities
+        ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+        100001          Scrooge McDuck          $999896                 $104                    $0                      $20
+        700007          Huey Duck               $152                    $40                     $42                     $10
+        800008          Dewey Duck              $312                    $40                     $2                      $0
+        900009          Louie Duck              $23                     $42                     $40                     $10
