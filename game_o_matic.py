@@ -16,12 +16,23 @@ import random
 
 def printPlayerInventories(player_list):
     for p in player_list.keys():
-        print(p, end=':\n')
+        print(p + ':')
         for i in player_list[p].items():
             print(f'\t{i[1]} {i[0]}')
-        # print(p.values())
-        # for i in p:
-        #     print(i)
+
+def addToInventory(player_list, player, item, amount):
+    # Adds amount to item in player's inventory. If item does not exist, add it to player's inventory and set the quantity to amount.
+    player_list[player][item] = player_list[player].setdefault(item, 0) + amount
+    print(f'{player} has received {amount} {item}.')
+
+def removeFromInventory(player_list, player, item, amount):
+    if (player_list[player][item] - amount) < 0:
+        amount = player_list[player][item]
+        # Removes the item from the inventory if the amount is zero
+        player_list[player].pop(item)
+    else:
+        player_list[player][item] -= amount
+    print(f'{player} has lost {amount} {item}.')
 
 players = dict()
 players['Gandolf'] = {'food': 5, 'grapefruit': 10, 'green potions': 7, 'red potions': 8, 'spells of enchantment': 10}
@@ -29,5 +40,7 @@ players['Frodo'] = {'food': 0, 'kiwi': 5, 'wands of confusion': 7, 'green potion
 players['Sauron'] = {'bat wings': 5, 'evil spells': 10, 'fire wands': 5}
 
 printPlayerInventories(players)
-# print(players.items())
+
+removeFromInventory(players, 'Gandolf', 'food', 100)
+printPlayerInventories(players)
 
