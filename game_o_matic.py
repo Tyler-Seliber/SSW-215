@@ -14,6 +14,9 @@ import random
 
 # Part 2
 
+def addPlayers(player_list, name, inventory):
+    player_list[name] = inventory
+
 def printPlayerInventories(player_list):
     for p in player_list.keys():
         print(p + ':')
@@ -35,9 +38,9 @@ def removeFromInventory(player_list, player, item, amount):
     print(f'{player} has lost {amount} {item}.')
 
 players = dict()
-players['Gandolf'] = {'food': 5, 'grapefruit': 10, 'green potions': 7, 'red potions': 8, 'spells of enchantment': 10}
-players['Frodo'] = {'food': 0, 'kiwi': 5, 'wands of confusion': 7, 'green potions': 8}
-players['Sauron'] = {'bat wings': 5, 'evil spells': 10, 'fire wands': 5}
+addPlayers(players, 'Gandolf', {'food': 5, 'grapefruit': 10, 'green potions': 7, 'red potions': 8, 'spells of enchantment': 10})
+addPlayers(players, 'Frodo', {'food': 0, 'kiwi': 5, 'wands of confusion': 7, 'green potions': 8})
+addPlayers(players, 'Sauron', {'bat wings': 5, 'evil spells': 10, 'fire wands': 5})
 
 printPlayerInventories(players)
 
