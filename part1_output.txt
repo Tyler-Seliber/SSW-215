@@ -1,0 +1,8 @@
+/Library/Frameworks/Python.framework/Versions/3.7/bin/python3 "/Users/tyler/GitHub Repositories/SSW-215/test_distribution.py"
+tyler@Tylers-MacBook-Pro SSW-215 % /Library/Frameworks/Python.framework/Versions/3.7/bin/python3 "/Users/tyler/GitHub Repositories/SSW-215/test_distribution.py"
+..
+----------------------------------------------------------------------
+Ran 2 tests in 0.000s
+
+OK
+tyler@Tylers-MacBook-Pro SSW-215 % 

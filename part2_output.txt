@@ -1,0 +1,44 @@
+/Library/Frameworks/Python.framework/Versions/3.7/bin/python3 "/Users/tyler/GitHub Repositories/SSW-215/part2_player_inventories.py"
+tyler@Tylers-MacBook-Pro SSW-215 % /Library/Frameworks/Python.framework/Versions/3.7/bin/python3 "/Users/tyler/GitHub Repositories/SSW-215/part2_player_inventories.py"
+Welcome, Gandolf.
+Welcome, Frodo.
+Welcome, Sauron.
+Current player inventories:
+        Gandolf:
+                5 food
+                10 grapefruit
+                7 green potions
+                8 red potions
+                10 spells of enchantment
+        Frodo:
+                0 food
+                5 kiwi
+                7 wands of confusion
+                8 green potions
+        Sauron:
+                5 bat wings
+                10 evil spells
+                5 fire wands
+Gandolf has received 18 food.
+Gandolf has lost 7 green potions.
+Sauron has received 4 spider eyes.
+Sauron has lost 3 bat wings.
+So long, Frodo.
+Welcome, Windelschleppitis.
+Current player inventories:
+        Gandolf:
+                23 food
+                10 grapefruit
+                8 red potions
+                10 spells of enchantment
+        Sauron:
+                2 bat wings
+                10 evil spells
+                5 fire wands
+                4 spider eyes
+        Windelschleppitis:
+                23 food
+                10 grapefruit
+                8 red potions
+                10 spells of enchantment
+tyler@Tylers-MacBook-Pro SSW-215 % 
