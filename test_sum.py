@@ -21,5 +21,5 @@ class TestSum(unittest.TestCase):
         self.assertEqual(result, 1)
 
 # Defines a command-line entry point, which runs the unittest test-runner .main()
-if __name__ == '__main__':
-    unittest.main()
+# if __name__ == '__main__':
+#     unittest.main()
