@@ -1,0 +1,12 @@
+function sum_trio(numSet, sum) {
+    trio = []
+    intermediate_sum = 0
+    for i in range(numSet) {
+        
+    }
+}
+
+// Part 2
+function sum_sequence(sum) {
+    
+}
