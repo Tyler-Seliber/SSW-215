@@ -1,3 +1,11 @@
+def print_inventory(inventory):
+    print('Store name: ' + inventory.get('name'))
+    print('Store address: ' + inventory.get('address'))
+    print('Stock:')
+    stock = inventory.get('stock')
+    for i in stock:
+        print(f"\t{i.get('author')}: \"{i.get('title')}\" (${i.get('price')})")
+
 inventory = {
     'name': 'Barnes & Noble Booksellers',
     'address': '395 Route 3 East Clifton, NJ 07014',
@@ -10,4 +18,4 @@ inventory = {
     ]
 }
 
-print(inventory)
+print_inventory(inventory)
