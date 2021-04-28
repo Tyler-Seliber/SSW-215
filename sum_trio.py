@@ -1,4 +1,5 @@
 # Part 1
+# My friend David Treder (CS) helped me with the logic and implementation of this function
 
 def sum_trio(numSet, sum, list = []):
     # print(list)
