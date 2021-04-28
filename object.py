@@ -1,3 +1,5 @@
+# datetime reference: https://www.geeksforgeeks.org/python-program-to-print-current-year-month-and-day/
+
 from datetime import date
 class Computer:
     # Create Computer object from given specs
